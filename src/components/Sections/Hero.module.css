@@ -1,0 +1,25 @@
+.hero {
+  /* padding-top: 30px; */
+  height: calc(100vh - 1rem);
+}
+
+.img {
+  width: 100%;
+  filter: brightness(80%);
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+.carousel-caption h3 {
+  font-size: clamp(3rem, 5vw, 6rem);
+}
+
+.carousel-caption p {
+  font-size: clamp(0.85rem, 1.1vw, 1.3rem);
+}

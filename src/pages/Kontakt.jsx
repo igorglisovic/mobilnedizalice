@@ -1,5 +1,11 @@
+import Header from '../components/Header/Header'
+
 const Kontakt = () => {
-  return <div>Kontakt</div>
+  return (
+    <div>
+      <Header />
+    </div>
+  )
 }
 
 export default Kontakt

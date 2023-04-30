@@ -5,6 +5,7 @@ import Kontakt from './pages/Kontakt'
 import Proizvodi from './pages/Proizvodi'
 import Reference from './pages/Reference'
 import ErrorPage from './pages/ErrorPage'
+import Onama from './pages/Onama'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route path="/kontakt" element={<Kontakt />} />
       <Route path="/proizvodi" element={<Proizvodi />} />
       <Route path="/reference" element={<Reference />} />
+      <Route path="/onama" element={<Onama />} />
       <Route path="/*" element={<ErrorPage />} />
     </Routes>
   )

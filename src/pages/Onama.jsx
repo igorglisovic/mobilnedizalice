@@ -1,6 +1,7 @@
+import React from 'react'
 import Header from '../components/Header/Header'
 
-const Proizvodi = () => {
+const Onama = () => {
   return (
     <div>
       <Header />
@@ -8,4 +9,4 @@ const Proizvodi = () => {
   )
 }
 
-export default Proizvodi
+export default Onama
