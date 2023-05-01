@@ -43,3 +43,14 @@
   margin-top: 4rem;
   color: #fff;
 }
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}
+
+.icons svg path:nth-child(1) {
+  fill: var(--secondary-clr);
+}
