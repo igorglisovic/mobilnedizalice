@@ -20,7 +20,7 @@
 }
 
 .wrapper p {
-  font-size: clamp(0.8rem, 2vw, 1.3rem);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
 .left-side,
@@ -44,7 +44,7 @@
 }
 
 .right-side p {
-  margin-left: 4rem;
+  margin-left: 3rem;
 }
 
 .right-side {

@@ -1,5 +1,7 @@
 import Container from '../UI/Container'
 import classes from './Achievements.module.css'
+import KgIcon from '../../assets/kgicon.png'
+import PreasureIcon from '../../assets/preasure-icon.png'
 
 const Achievements = () => {
   return (
@@ -40,10 +42,12 @@ const Achievements = () => {
             <span>Prodato proizvoda</span>
           </div>
           <div>
+            <img src={KgIcon} alt="" />
             <h3>2,800KG</h3>
             <span>Nosivost</span>
           </div>
           <div>
+            <img src={PreasureIcon} alt="" />
             <h3>7bar</h3>
             <span>Pritisak</span>
           </div>

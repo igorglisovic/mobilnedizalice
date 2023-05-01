@@ -1,22 +1,24 @@
 .achievements {
   background-color: var(--secondary-clr);
   color: #fff;
-  padding-block: 6rem;
+  padding-block: 6.5rem;
 }
 
 .wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .wrapper > div {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   text-align: center;
 }
 
 .wrapper h3 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   font-weight: 800;
 }
 
@@ -30,4 +32,11 @@
   margin: 0 auto;
   margin-bottom: -0.7rem;
   font-size: 0.5rem;
+}
+
+.wrapper img {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto;
+  margin-bottom: -0.4rem;
 }

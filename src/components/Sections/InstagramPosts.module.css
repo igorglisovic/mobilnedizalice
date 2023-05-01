@@ -1,0 +1,9 @@
+.instagram-posts {
+  text-align: center;
+}
+
+.ig {
+  color: var(--secondary-clr);
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  font-weight: 600;
+}

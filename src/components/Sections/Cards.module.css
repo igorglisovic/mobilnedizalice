@@ -1,0 +1,53 @@
+.cards {
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+}
+
+.cards h2 {
+  text-transform: uppercase;
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  text-align: center;
+  margin-bottom: 4rem;
+  font-weight: 700;
+}
+
+.cards ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: #fff;
+}
+
+.cards ul li {
+  padding: 1rem 2rem;
+  background-color: var(--main-clr);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cards .left-side {
+  width: 30%;
+  flex-grow: 1;
+}
+
+.cards .right-side {
+  width: 60%;
+  flex-grow: 2;
+  align-self: center;
+}
+
+.description {
+  margin-inline: 0.5rem;
+  font-size: clamp(0.8rem, 2vw, 1.1rem);
+  background-color: var(--secondary-clr);
+}
+
+.description:not(:empty) {
+  padding: 1rem 1.5rem;
+}
+
+.wrapper {
+  display: flex;
+  gap: 2rem;
+}
