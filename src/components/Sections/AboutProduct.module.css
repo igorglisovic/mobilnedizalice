@@ -1,3 +1,79 @@
 .about-product {
-  height: 800px;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-top: 4rem;
+  color: #fff;
+}
+
+.wrapper h2 {
+  font-size: clamp(1.2rem, 3vw, 2.2rem);
+  margin-bottom: 1rem;
+}
+
+.wrapper button {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.wrapper p {
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
+}
+
+.left-side,
+.right-side {
+  padding: 2.2rem 4rem;
+}
+
+.left-side {
+  background: linear-gradient(
+    149.04deg,
+    #001659 52.36%,
+    rgba(0, 178, 255, 0.82) 212.1%
+  );
+  width: 50%;
+
+  align-self: baseline;
+}
+
+.left-side p {
+  margin-right: 4rem;
+}
+
+.right-side p {
+  margin-left: 4rem;
+}
+
+.right-side {
+  width: 50%;
+  background: linear-gradient(211.66deg, #ff5e14 45.95%, #ffa841 186.3%);
+  text-align: right;
+  margin-top: 8rem;
+}
+
+.right-side button {
+  background-color: var(--secondary-clr);
+}
+
+.img-wrapper {
+  margin-top: -7rem;
+  margin-left: -9rem;
+  display: flex;
+}
+
+.img-wrapper > div {
+  align-self: center;
+  text-align: right;
+  color: var(--secondary-clr);
+}
+
+.img-wrapper p {
+  font-size: clamp(0.8rem, 2vw, 1.3rem);
+}
+
+.img-wrapper h2 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
 }
