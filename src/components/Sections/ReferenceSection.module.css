@@ -1,0 +1,19 @@
+.reference {
+  padding: 7rem 0;
+}
+
+.reference h1 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  color: var(--secondary-clr);
+}
+
+.wrapper {
+  background-color: var(--secondary-clr);
+  color: #fff;
+  margin-top: 2rem;
+  padding: 1.5rem 2.5rem;
+}
+
+.wrapper p {
+  margin-bottom: 2rem;
+}

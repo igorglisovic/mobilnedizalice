@@ -1,0 +1,33 @@
+.o-nama {
+  padding: 7rem 0;
+}
+
+.o-nama h1 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  color: var(--secondary-clr);
+}
+
+.img-wrapper {
+  background-image: url('https://wallpaper.dog/large/20512813.jpg');
+  height: 450px;
+  background-position: bottom;
+  margin-top: 1rem;
+}
+
+.o-nama p {
+  margin: 0rem 2rem;
+  margin-top: 2rem;
+  color: var(--secondary-clr);
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+}
+
+.o-nama svg path:nth-child(1) {
+  fill: var(--main-clr);
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  margin-top: 1rem;
+}

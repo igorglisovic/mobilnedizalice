@@ -1,3 +1,4 @@
+import ContactForm from '../UI/ContactForm'
 import Container from '../UI/Container'
 import classes from './Footer.module.css'
 
@@ -24,25 +25,14 @@ const Footer = () => {
               <span>+123 456 78 90</span>
             </div>
           </div>
-          <form>
-            <h2>Kontakt forma</h2>
-            <div>
-              <label htmlFor="name">Vaše ime</label>
-              <input id="name" type="text" />
-            </div>
-            <div>
-              <label htmlFor="email">Vaš email</label>
-              <input id="email" type="email" />
-            </div>
-            <div>
-              <label htmlFor="poruka">Vaša poruka</label>
-              <textarea id="poruka" cols="30" rows="10" />
-            </div>
-            <button type="submit">Pošalji</button>
-          </form>
+          <ContactForm />
         </div>
-        <div className={classes.secondary}></div>
       </Container>
+      <div className={classes.secondary}>
+        <Container>
+          <p>© 2022 MobilneDizalice © Sva prava zadržana.</p>
+        </Container>
+      </div>
     </footer>
   )
 }

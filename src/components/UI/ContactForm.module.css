@@ -1,0 +1,18 @@
+.form {
+  padding: 2rem;
+  background-color: #fff;
+  min-width: 40%;
+  color: var(--secondary-clr);
+}
+
+.form > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.form button {
+  float: right;
+  margin-top: 1rem;
+  font-size: 1rem;
+}

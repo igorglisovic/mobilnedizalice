@@ -1,0 +1,16 @@
+.breadcrumb {
+  display: flex;
+}
+
+.breadcrumb li,
+.breadcrumb li a {
+  color: #6b6b6b;
+}
+
+.breadcrumb li a:hover {
+  color: var(--main-clr);
+}
+
+.active {
+  color: #121212 !important;
+}
