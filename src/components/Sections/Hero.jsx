@@ -33,7 +33,7 @@ const Hero = () => {
         loop={true}
         pagination={{ clickable: true }}
         onSlideChange={() => console.log('slide change')}
-        onSwiper={swiper => console.log(swiper)}
+        onSwiper={(swiper) => console.log(swiper)}
         effect={'cube'}
         coverflowEffect={{
           rotate: 0,
@@ -49,6 +49,7 @@ const Hero = () => {
             <div className={classes['carousel-caption']}>
               <p>{slide.title}</p>
               <h3>{slide.subTitle}</h3>
+              <button>Pozovite nas</button>
             </div>
           </SwiperSlide>
         ))}

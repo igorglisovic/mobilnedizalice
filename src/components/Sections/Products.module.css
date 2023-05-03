@@ -1,0 +1,84 @@
+.products {
+  /* padding: 7rem 0; */
+}
+
+.products h1 {
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
+  color: var(--secondary-clr);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.wrapper aside {
+  padding: 7rem 3rem;
+  color: #fff;
+  background-color: var(--secondary-clr);
+  align-self: flex-start;
+}
+
+.wrapper aside h3 {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  margin-bottom: 0.8rem;
+}
+
+.wrapper aside li {
+  font-size: clamp(0.8rem, 2vw, 1.2rem);
+  cursor: pointer;
+}
+
+.wrapper > div {
+  padding: 7rem 0;
+  width: 70%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 30%;
+}
+
+.product h3 {
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  font-weight: 600;
+}
+
+.img-wrapper {
+  aspect-ratio: 1;
+  background-size: cover;
+  background-position-x: center;
+}
+
+.content {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  background-color: var(--secondary-clr);
+  width: 130px;
+}
+
+.content button {
+  margin-top: 1rem;
+  background-color: var(--secondary-clr);
+  align-self: flex-start;
+}

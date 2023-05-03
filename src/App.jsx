@@ -6,6 +6,7 @@ import Proizvodi from './pages/Proizvodi'
 import Reference from './pages/Reference'
 import ErrorPage from './pages/ErrorPage'
 import Onama from './pages/Onama'
+import Product from './pages/Product'
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/proizvodi" element={<Proizvodi />} />
       <Route path="/reference" element={<Reference />} />
       <Route path="/onama" element={<Onama />} />
+      <Route path="/product:productId" element={<Product />} />
       <Route path="/*" element={<ErrorPage />} />
     </Routes>
   )
