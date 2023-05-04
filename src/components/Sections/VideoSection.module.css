@@ -31,10 +31,6 @@
   font-size: clamp(1.2rem, 3vw, 2.2rem);
 }
 
-.wrapper p {
-  font-size: clamp(0.8rem, 2vw, 1.2rem);
-}
-
 .wrapper button {
   align-self: center;
   background-color: var(--secondary-clr);

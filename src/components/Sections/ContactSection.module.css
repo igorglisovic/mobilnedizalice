@@ -8,17 +8,7 @@
   gap: 3rem;
 }
 
-.contact h1 {
-  font-weight: 700;
-  font-size: clamp(1.2rem, 3vw, 2.2rem);
-}
-
-.contact p {
-  font-size: clamp(0.8rem, 2vw, 1.1rem);
-}
-
 .contact form {
-  min-width: 500px;
   color: #fff;
 }
 
@@ -33,10 +23,6 @@
   color: var(--secondary-clr);
 }
 
-.contact-info > div span {
-  font-weight: 600;
-}
-
 .secondary {
   background-color: var(--main-clr);
   padding-block: 1rem;
@@ -44,13 +30,12 @@
   color: #fff;
 }
 
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-  margin-top: 1rem;
-}
-
 .icons svg path:nth-child(1) {
   fill: var(--secondary-clr);
+}
+
+@media only screen and (max-width: 930px) {
+  .wrapper {
+    flex-direction: column;
+  }
 }

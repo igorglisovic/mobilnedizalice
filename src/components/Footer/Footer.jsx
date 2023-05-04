@@ -18,11 +18,11 @@ const Footer = () => {
             </div>
             <div>
               <h3>Mail</h3>
-              <span>email@email.com</span>
+              <a href="mailto:email@example.com">email@email.com</a>
             </div>
             <div>
               <h3>Phone</h3>
-              <span>+123 456 78 90</span>
+              <a href="tel:123-456-7890">+123 456 78 90</a>
             </div>
           </div>
           <ContactForm />

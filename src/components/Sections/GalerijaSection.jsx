@@ -2,6 +2,13 @@ import { mainPhotos, secondaryPhotos } from '../../data/galerija'
 import Breadcrumb from '../UI/Breadcrumb'
 import Container from '../UI/Container'
 import classes from './GalerijaSection.module.css'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import { Navigation } from 'swiper'
+
+import 'swiper/swiper-bundle.min.css'
+
+import 'swiper/css'
 
 const GalerijaSection = () => {
   return (
@@ -18,11 +25,23 @@ const GalerijaSection = () => {
             />
           ))}
         </div>
-        <div className={classes['secondary-photos']}>
+        <Swiper
+          modules={[Navigation]}
+          spaceBetween={10}
+          slidesPerView={8}
+          navigation
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={swiper => console.log(swiper)}
+        >
           {secondaryPhotos.map((photo, i) => (
-            <div style={{ backgroundImage: `url(${photo.src})` }} key={i}></div>
+            <SwiperSlide key={i}>
+              <div
+                className={classes['secondary-photo']}
+                style={{ backgroundImage: `url(${photo.src})` }}
+              ></div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
       </Container>
     </section>
   )

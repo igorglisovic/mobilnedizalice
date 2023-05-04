@@ -6,13 +6,15 @@ import classes from './Cards.module.css'
 const Cards = () => {
   const [cards, setCards] = useState(data)
   const [clickedCard, setClickedCard] = useState(data[0])
+  const [mediaMatches, setMediaMatches] = useState(false)
+
+  let media = window.matchMedia('(max-width: 760px)')
 
   const onClickHandler = (e, index) => {
     setCards(
       cards.map((card, i) => {
         if (card.active && i !== index) return { ...card, active: false }
         if (i === index) return { ...card, active: true }
-        // if (i === index && card.active) return card
         else return card
       })
     )
@@ -25,8 +27,19 @@ const Cards = () => {
   }
 
   useEffect(() => {
-    console.log(clickedCard)
-  }, [clickedCard])
+    if (media.matches) {
+      setMediaMatches(true)
+    } else {
+      setMediaMatches(false)
+    }
+    window.addEventListener('resize', () => {
+      if (media.matches) {
+        setMediaMatches(true)
+      } else {
+        setMediaMatches(false)
+      }
+    })
+  }, [])
 
   return (
     <section className={classes.cards}>
@@ -39,42 +52,30 @@ const Cards = () => {
                 return (
                   <div key={i}>
                     <li
-                      onClick={(e) => {
+                      onClick={e => {
                         onClickHandler(e, i)
                       }}
                     >
-                      {card.title}
+                      <h3>{card.title}</h3>
                     </li>
                     <div className={classes.description}>
                       {card.active && <p>{card.description}</p>}
+                      {mediaMatches && card.active && (
+                        <div className={classes['right-side']}>
+                          <img src={clickedCard?.img} alt="" />
+                        </div>
+                      )}
                     </div>
                   </div>
                 )
               })}
             </ul>
           </div>
-          <div
-            //         style={{
-            //           background: `linear-gradient(
-            //   175.85deg,
-            //   #ffffff 2.04%,
-            //   rgba(255, 255, 255, 0) 35.91%,
-            //   rgba(255, 255, 255, 0.242634) 75.83%,
-            //   #ffffff 96.48%
-            // ),
-            // linear-gradient(
-            //   268.5deg,
-            //   #ffffff 4.94%,
-            //   rgba(255, 255, 255, 0) 34.92%,
-            //   rgba(255, 255, 255, 0.242634) 78.28%,
-            //   #ffffff 100.98%
-            // ),
-            // url(${clickedCard?.img})`,
-            //         }}
-            className={classes['right-side']}
-          >
-            <img src={clickedCard?.img} alt="" />
-          </div>
+          {mediaMatches || (
+            <div className={classes['right-side']}>
+              <img src={clickedCard?.img} alt="" />
+            </div>
+          )}
         </div>
       </Container>
     </section>

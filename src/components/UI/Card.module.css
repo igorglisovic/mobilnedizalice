@@ -1,0 +1,40 @@
+.products-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.product h3 {
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+  font-weight: 600;
+}
+
+.img-wrapper {
+  width: clamp(200px, 10vw, 300px);
+}
+
+.content {
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.content img {
+  background-color: var(--secondary-clr);
+  padding: 0.2rem 0.3rem;
+  width: 130px;
+}
+
+.content button {
+  margin-top: 1rem;
+  background-color: var(--secondary-clr);
+  align-self: flex-start;
+}

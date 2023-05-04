@@ -32,8 +32,8 @@ const Hero = () => {
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={(swiper) => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={(swiper) => console.log(swiper)}
         effect={'cube'}
         coverflowEffect={{
           rotate: 0,

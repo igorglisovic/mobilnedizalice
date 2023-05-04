@@ -10,14 +10,14 @@ const Achievements = () => {
         <div className={classes.wrapper}>
           <div>
             <svg
-              width="65"
-              height="65"
-              viewBox="0 0 65 65"
+              width="54"
+              height="49"
+              viewBox="0 0 54 49"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
             >
-              <rect width="65" height="65" fill="url(#pattern0)" />
+              <rect width="54" height="49" fill="url(#pattern0)" />
               <defs>
                 <pattern
                   id="pattern0"
@@ -27,7 +27,7 @@ const Achievements = () => {
                 >
                   <use
                     xlinkHref="#image0_1_73"
-                    transform="translate(-0.00342466) scale(0.00342466)"
+                    transform="matrix(0.00409423 0 0 0.00451201 -0.0925926 -0.179161)"
                   />
                 </pattern>
                 <image

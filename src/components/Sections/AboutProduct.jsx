@@ -45,7 +45,6 @@ const AboutProduct = () => {
             </p>
           </div>
         </div>
-        <div></div>
       </Container>
     </section>
   )

@@ -5,7 +5,6 @@
 
 .cards h2 {
   text-transform: uppercase;
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
   text-align: center;
   margin-bottom: 4rem;
   font-weight: 700;
@@ -21,7 +20,6 @@
 .cards ul li {
   padding: 1rem 2rem;
   background-color: var(--main-clr);
-  font-size: 1.5rem;
   font-weight: 600;
   cursor: pointer;
 }
@@ -39,7 +37,6 @@
 
 .description {
   margin-inline: 0.5rem;
-  font-size: clamp(0.8rem, 2vw, 1.1rem);
   background-color: var(--secondary-clr);
 }
 
@@ -50,4 +47,30 @@
 .wrapper {
   display: flex;
   gap: 2rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cards .right-side {
+    width: 50%;
+  }
+
+  .cards .left-side {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .cards .right-side,
+  .cards .left-side {
+    width: initial;
+  }
+
+  .cards .right-side {
+    margin-top: 1rem;
+    width: 60%;
+  }
 }

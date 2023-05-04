@@ -6,7 +6,15 @@ const Breadcrumb = () => {
   const location = useLocation()
 
   // Split the URL path into individual segments
-  const segments = location.pathname.split('/').filter((s) => s !== '')
+  const segments = location.pathname
+    .split('/')
+    .filter(s => s !== '')
+    .map(item => {
+      if (item.includes(':')) {
+        return item.replace(':', '')
+      }
+      return item
+    })
 
   // Build an array of breadcrumb items from the URL segments
   const items = segments.map((s, i) => {
@@ -32,6 +40,7 @@ const Breadcrumb = () => {
             ) : (
               <Link to={item.link}>{item.label}</Link>
             )}
+            {items.length > 1 && index !== items.length - 1 && '/ '}
           </li>
         ))}
       </ol>

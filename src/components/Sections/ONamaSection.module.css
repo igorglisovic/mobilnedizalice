@@ -3,7 +3,6 @@
 }
 
 .o-nama h1 {
-  font-size: clamp(1.2rem, 3vw, 2.5rem);
   color: var(--secondary-clr);
 }
 
@@ -15,19 +14,11 @@
 }
 
 .o-nama p {
-  margin: 0rem 2rem;
+  margin: 0rem 1rem;
   margin-top: 2rem;
   color: var(--secondary-clr);
-  font-size: clamp(0.8rem, 2vw, 1.2rem);
 }
 
 .o-nama svg path:nth-child(1) {
   fill: var(--main-clr);
-}
-
-.icons {
-  display: flex;
-  align-items: center;
-  gap: 0.2rem;
-  margin-top: 1rem;
 }

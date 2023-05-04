@@ -20,15 +20,15 @@ header ul {
 header ul li {
   /* text-transform: uppercase; */
   font-weight: 600;
-  font-size: clamp(0.85rem, 1.1vw, 1.2rem);
 }
 
 header ul li a {
   color: var(--secondary-clr);
+  font-size: clamp(0.9rem, 1.6vw, 1.15rem);
 }
 
 .logo {
-  width: clamp(5.5rem, 8vw, 10rem);
+  width: clamp(5.7rem, 8vw, 10rem);
 }
 
 .logo a {
@@ -38,5 +38,11 @@ header ul li a {
 .kontakt {
   color: #fff !important;
   background-color: var(--main-clr);
-  padding: 0.6em 2em;
+  padding: 0.5em 2em;
+}
+
+@media only screen and (max-width: 950px) {
+  header ul {
+    gap: 0.8rem;
+  }
 }

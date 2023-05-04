@@ -13,30 +13,27 @@
 .wrapper > div {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   text-align: center;
 }
 
 .wrapper h3 {
-  font-size: 4.5rem;
+  font-size: clamp(2.6rem, 5.5vw, 4.5rem);
   font-weight: 800;
 }
 
 .wrapper span {
   font-weight: 600;
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
+  font-size: clamp(0.87rem, 2.1vw, 1.4rem);
   margin-top: -1rem;
 }
 
 .wrapper svg {
-  margin: 0 auto;
-  margin-bottom: -0.7rem;
-  font-size: 0.5rem;
+  width: clamp(35px, 4vw, 55px);
 }
 
 .wrapper img {
-  width: 45px;
-  height: 45px;
-  margin: 0 auto;
-  margin-bottom: -0.4rem;
+  width: clamp(35px, 3.5vw, 50px);
 }

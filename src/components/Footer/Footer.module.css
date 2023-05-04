@@ -8,7 +8,7 @@ footer {
 .main {
   display: flex;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .main-left {
@@ -19,7 +19,7 @@ footer {
 }
 
 .main-left h2 {
-  font-size: clamp(1.8rem, 2.5vw, 2.9rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.9rem);
   letter-spacing: 1.1px;
 }
 
@@ -28,4 +28,10 @@ footer {
   padding-block: 1rem;
   margin-top: 4rem;
   color: #fff;
+}
+
+@media only screen and (max-width: 930px) {
+  .main {
+    flex-direction: column;
+  }
 }
