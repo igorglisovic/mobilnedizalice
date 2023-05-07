@@ -8,17 +8,15 @@
 .product {
   display: flex;
   flex-direction: column;
+  width: clamp(200px, 43vw, 31%);
   padding: 1rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  justify-content: flex-end;
 }
 
 .product h3 {
   font-size: clamp(0.8rem, 2vw, 1.5rem);
   font-weight: 600;
-}
-
-.img-wrapper {
-  width: clamp(200px, 10vw, 300px);
 }
 
 .content {
@@ -28,7 +26,7 @@
 }
 
 .content img {
-  background-color: var(--secondary-clr);
+  margin-left: -4px;
   padding: 0.2rem 0.3rem;
   width: 130px;
 }
@@ -37,4 +35,20 @@
   margin-top: 1rem;
   background-color: var(--secondary-clr);
   align-self: flex-start;
+}
+
+.slider-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 840px) {
+  .product {
+    width: 46%;
+  }
+
+  .products-wrapper {
+    justify-content: space-between;
+  }
 }

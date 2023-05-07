@@ -68,6 +68,11 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+  color: #fff !important;
+}
+
 .hero .swiper-button-prev {
   left: 0;
   padding: 4rem 2.2rem 4rem 1.8rem;
@@ -78,6 +83,10 @@ body {
   padding: 4rem 1.8rem 4rem 2.2rem;
 }
 
+.products .container {
+  width: clamp(350px, 80vw, 1300px) !important;
+}
+
 .swiper [class^='swiper-button-prev']::after {
   /* font-size: 50px !important; */
 }
@@ -86,9 +95,15 @@ body {
   height: 100%;
 }
 
+.swiper-pagination {
+  margin-bottom: 14px;
+}
+
 .swiper-pagination-bullet {
   background: #fff;
   opacity: 1;
+  --swiper-pagination-bullet-size: 10px;
+  --swiper-pagination-bullet-horizontal-gap: 8px;
 }
 
 .swiper-pagination-bullet-active {

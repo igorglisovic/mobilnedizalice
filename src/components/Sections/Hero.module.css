@@ -2,6 +2,7 @@
   position: relative;
   height: calc(100vh - 1rem);
   overflow: hidden;
+  padding-top: 4rem;
 }
 
 .img {
@@ -11,7 +12,7 @@
 
 .carousel-caption {
   position: absolute;
-  bottom: 15%;
+  bottom: 19%;
   left: 50%;
   transform: translateX(-50%);
   color: #fff;
@@ -23,7 +24,7 @@
 }
 
 .carousel-caption h1 {
-  font-size: clamp(2.5rem, 4vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 5.5rem);
   font-weight: 800;
   line-height: 1.2;
   margin-bottom: 1.5rem;
@@ -78,4 +79,30 @@
 
 .location-wrapper img {
   width: clamp(32px, 5vw, 28px);
+}
+
+@media only screen and (max-width: 785px) {
+  .phone-wrapper,
+  .location-wrapper {
+    transform: translateX(138px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .phone-wrapper,
+  .location-wrapper {
+    transform: translateX(126px);
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .icons {
+    top: 16%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .icons {
+    top: 13%;
+  }
 }

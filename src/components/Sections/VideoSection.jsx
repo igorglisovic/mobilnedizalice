@@ -12,21 +12,20 @@ const VideoSection = () => {
 
   return (
     <section className={classes['video-section']}>
-      <Container>
-        <div className={classes.wrapper}>
-          <video
-            style={{
-              boxShadow: 'inset 50px 0 white',
-            }}
-            ref={videoRef}
-            src={video}
-            autoPlay
-            loop
-            muted
-          >
-            <p>Your browser does not recognize video element.</p>
-          </video>
-          <div className={classes.shadow}></div>
+      <div className={classes.wrapper}>
+        <video
+          style={{
+            boxShadow: 'inset 50px 0 white',
+          }}
+          ref={videoRef}
+          src={video}
+          autoPlay
+          loop
+          muted
+        >
+          <p>Your browser does not recognize video element.</p>
+        </video>
+        <Container>
           <div className={classes.content}>
             <h2>Lorem ipsum</h2>
             <p>
@@ -35,8 +34,8 @@ const VideoSection = () => {
             </p>
             <button>Pozovite</button>
           </div>
-        </div>
-      </Container>
+        </Container>
+      </div>
     </section>
   )
 }

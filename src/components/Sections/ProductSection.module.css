@@ -36,7 +36,6 @@
 }
 
 .content h1 {
-  font-size: clamp(1.2rem, 3vw, 2.6rem);
   color: var(--secondary-clr);
   margin-bottom: 1rem;
 }
@@ -48,7 +47,6 @@
 
 .description h2 {
   font-weight: 600;
-  font-size: clamp(1.2rem, 3vw, 1.8rem);
 }
 
 .related-products {
@@ -68,4 +66,24 @@
 .pm-tools {
   width: 120px;
   vertical-align: middle;
+}
+
+@media only screen and (max-width: 900px) {
+  .wrapper {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .images {
+    width: initial;
+  }
+
+  .related-products {
+    margin-top: 4rem;
+  }
 }

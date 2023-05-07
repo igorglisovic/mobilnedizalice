@@ -9,7 +9,7 @@
 }
 
 .wrapper aside {
-  padding: 7rem 3rem;
+  padding: 7rem 2rem;
   color: #fff;
   background-color: var(--secondary-clr);
   align-self: flex-start;
@@ -26,10 +26,32 @@
 
 .wrapper > div {
   padding: 7rem 0;
-  width: 70%;
 }
 
 .categories {
   display: flex;
   flex-direction: column;
+}
+
+.products select {
+  background-color: var(--secondary-clr);
+  color: #fff;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  text-align: center;
+  padding: 0.3rem 0;
+}
+
+@media only screen and (max-width: 840px) {
+  .wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .wrapper > div {
+    padding: 0;
+  }
+
+  .products {
+    padding-bottom: 6rem;
+  }
 }

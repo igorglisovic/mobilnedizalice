@@ -12,7 +12,7 @@ import 'swiper/css'
 
 const GalerijaSection = () => {
   return (
-    <section className={classes.galerija}>
+    <section className={`${classes.galerija} gallery`}>
       <Container>
         <Breadcrumb />
         <h1>Galerija</h1>
@@ -28,7 +28,7 @@ const GalerijaSection = () => {
         <Swiper
           modules={[Navigation]}
           spaceBetween={10}
-          slidesPerView={8}
+          slidesPerView={6}
           navigation
           onSlideChange={() => console.log('slide change')}
           onSwiper={swiper => console.log(swiper)}
@@ -48,13 +48,3 @@ const GalerijaSection = () => {
 }
 
 export default GalerijaSection
-
-// {
-//   galerija.map((photo, i) => (
-//     <img
-//       className={`${classes['grid-item']} ${classes[`item${i + 1}`]}}`}
-//       key={i}
-//       src={photo}
-//     />
-//   ))
-// }

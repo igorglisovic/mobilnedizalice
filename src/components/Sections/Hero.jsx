@@ -28,18 +28,12 @@ const Hero = () => {
           EffectCoverflow,
           Autoplay,
         ]}
-        // spaceBetween={50}
         slidesPerView={1}
         navigation
         loop={true}
         pagination={{ clickable: true }}
-        // coverflowEffect={{
-        //   rotate: 0,
-        //   stretch: 0,
-        //   depth: 100,
-        //   modifier: 2.5,
-        // }}
-        // autoplay={{ delay: 1000000 }}
+        speed={800}
+        autoplay={{ delay: 400000 }}
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>

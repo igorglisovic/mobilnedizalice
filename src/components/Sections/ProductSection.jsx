@@ -2,7 +2,7 @@ import Breadcrumb from '../UI/Breadcrumb'
 import Container from '../UI/Container'
 import classes from './ProductSection.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Pmtools from '../../assets/PmTools.png'
+import Pmtools from '../../assets/PmToolsWhite.png'
 
 import { Navigation } from 'swiper'
 
@@ -14,16 +14,18 @@ import { useProductContext } from '../../context/ProductContext'
 import { useEffect, useState } from 'react'
 import { products } from '../../data/products'
 import Card from '../UI/Card'
+import { useLocation, useParams } from 'react-router-dom'
 
 const ProductSection = () => {
-  const { clickedProduct } = useProductContext()
+  const params = useParams().productId.slice(1)
+  const clickedProduct = products.find(product => product.name === params)
 
   const [mainImage, setMainImage] = useState(clickedProduct.images[0])
-
   const clickedProductGroup = clickedProduct.group
 
   const relatedProducts = products.filter(
-    product => product.group === clickedProductGroup
+    product =>
+      product.group === clickedProductGroup && product !== clickedProduct
   )
 
   console.log(relatedProducts)

@@ -21,6 +21,7 @@ const Card = ({ list, slider }) => {
     updateProductContext(clickedProduct)
 
     navigate(`/proizvodi/:${clickedProduct.name}`)
+    window.scrollTo(0, 0)
   }
 
   return (
@@ -37,7 +38,7 @@ const Card = ({ list, slider }) => {
           >
             {list.map((product, i) => (
               <SwiperSlide key={i}>
-                <div>
+                <div className={classes['slider-card']}>
                   <div>
                     <img src={product?.thumb} alt="" />
                   </div>

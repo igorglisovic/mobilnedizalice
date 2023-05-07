@@ -32,6 +32,7 @@ const Cards = () => {
     } else {
       setMediaMatches(false)
     }
+
     window.addEventListener('resize', () => {
       if (media.matches) {
         setMediaMatches(true)

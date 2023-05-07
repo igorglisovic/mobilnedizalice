@@ -1,20 +1,21 @@
+.video-section {
+  max-height: 550px;
+  overflow: hidden;
+  display: grid;
+  justify-items: center;
+  align-content: center;
+}
+
 .wrapper {
+  width: 100%;
   position: relative;
   color: #fff;
   text-align: center;
 }
 
 .wrapper video {
-  filter: brightness(45%);
-}
-
-.shadow {
-  position: absolute;
   width: 100%;
-  height: 100%;
-  box-shadow: inset 0 -100px 0 0px #fff, inset 0 100px 0px 0px #fff;
-  top: 0;
-  left: 0;
+  filter: brightness(45%);
 }
 
 .wrapper .content {
@@ -34,14 +35,8 @@
   font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 1360px) {
-  .shadow {
-    box-shadow: inset 0 -70px 0 0px #fff, inset 0 70px 0px 0px #fff;
-  }
-}
-
-@media only screen and (max-width: 1050px) {
-  .shadow {
-    box-shadow: none;
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    width: 130%;
   }
 }
