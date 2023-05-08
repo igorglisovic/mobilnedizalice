@@ -9,8 +9,29 @@ import { Navigation } from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 
 import 'swiper/css'
+import { useEffect, useState } from 'react'
 
 const Card = ({ list, slider }) => {
+  const [mediaMatches, setMediaMatches] = useState(false)
+
+  let media = window.matchMedia('(max-width: 660px)')
+
+  useEffect(() => {
+    if (media.matches) {
+      setMediaMatches(true)
+    } else {
+      setMediaMatches(false)
+    }
+
+    window.addEventListener('resize', () => {
+      if (media.matches) {
+        setMediaMatches(true)
+      } else {
+        setMediaMatches(false)
+      }
+    })
+  }, [])
+
   const { updateProductContext } = useProductContext()
 
   const navigate = useNavigate()
@@ -27,14 +48,12 @@ const Card = ({ list, slider }) => {
   return (
     <>
       {slider ? (
-        <div>
+        <div className="related">
           <Swiper
             modules={[Navigation]}
             spaceBetween={50}
-            slidesPerView={3}
+            slidesPerView={mediaMatches ? 2 : 3}
             navigation
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={swiper => console.log(swiper)}
           >
             {list.map((product, i) => (
               <SwiperSlide key={i}>

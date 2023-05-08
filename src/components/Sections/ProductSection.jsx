@@ -28,15 +28,9 @@ const ProductSection = () => {
       product.group === clickedProductGroup && product !== clickedProduct
   )
 
-  console.log(relatedProducts)
-
   const onClickHandler = image => {
     setMainImage(image)
   }
-
-  useEffect(() => {
-    console.log(clickedProduct)
-  }, [clickedProduct])
 
   return (
     <section className={classes.product}>
@@ -53,8 +47,6 @@ const ProductSection = () => {
                 spaceBetween={10}
                 slidesPerView={3}
                 navigation
-                onSlideChange={() => console.log('slide change')}
-                onSwiper={swiper => console.log(swiper)}
               >
                 {clickedProduct.images.map((image, i) => (
                   <SwiperSlide key={i}>

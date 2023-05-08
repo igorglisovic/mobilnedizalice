@@ -24,6 +24,11 @@ header ul li {
 header ul li a {
   color: var(--secondary-clr);
   font-size: clamp(0.9rem, 1.6vw, 1.15rem);
+  transition: color 0.2s;
+}
+
+header ul li a:hover {
+  color: var(--main-clr);
 }
 
 .logo {

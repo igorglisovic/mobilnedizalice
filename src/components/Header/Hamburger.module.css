@@ -1,6 +1,9 @@
 .hamburger {
   position: relative;
   font-family: sans-serif;
+  background-color: transparent;
+  padding: 0;
+  z-index: 99999;
 }
 
 .hamburger svg {

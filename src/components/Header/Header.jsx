@@ -33,10 +33,10 @@ const Header = () => {
           <img src={logo} alt="" />
         </Link>
       </div>
-      <nav>
-        {mediaMatches ? (
-          <Hamburger />
-        ) : (
+      {mediaMatches ? (
+        <Hamburger />
+      ) : (
+        <nav>
           <ul>
             <li>
               <NavLink activeclassname="active" to="/">
@@ -61,8 +61,8 @@ const Header = () => {
               </NavLink>
             </li>
           </ul>
-        )}
-      </nav>
+        </nav>
+      )}
     </header>
   )
 }

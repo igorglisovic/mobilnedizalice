@@ -15,6 +15,10 @@
   align-self: flex-start;
 }
 
+.wrapper aside li:hover {
+  color: var(--main-clr);
+}
+
 .wrapper aside h3 {
   font-size: clamp(1.2rem, 3vw, 1.8rem);
   margin-bottom: 0.8rem;
@@ -22,6 +26,7 @@
 
 .wrapper aside li {
   cursor: pointer;
+  transition: color 0.2s;
 }
 
 .wrapper > div {

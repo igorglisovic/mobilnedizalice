@@ -6,6 +6,7 @@
 .cards h2 {
   text-transform: uppercase;
   text-align: center;
+  color: var(--secondary-clr);
   margin-bottom: 4rem;
   font-weight: 700;
 }

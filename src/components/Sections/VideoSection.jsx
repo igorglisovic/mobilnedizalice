@@ -22,17 +22,20 @@ const VideoSection = () => {
           autoPlay
           loop
           muted
+          playsInline
         >
           <p>Your browser does not recognize video element.</p>
         </video>
         <Container>
           <div className={classes.content}>
-            <h2>Lorem ipsum</h2>
+            <h2>Fokusiramo se na kvalitet</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptatum, quam. Minima, illum facere, recusandae officiis.
+              Koliko puta ste kupili nešto jeftino, a zatim drugi put pravilno
+              kupili? Sa nama ne morate da brinete. Lift je 100% proizveden u
+              Poljskoj, sa akcentom na kvalitet i, pre svega, izdržljivost,
+              tačnost zahvaljujući laserskom rezanju.
             </p>
-            <button>Pozovite</button>
+            <button>Poruci odmah!</button>
           </div>
         </Container>
       </div>

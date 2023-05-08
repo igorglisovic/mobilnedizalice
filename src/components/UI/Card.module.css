@@ -15,7 +15,6 @@
 }
 
 .product h3 {
-  font-size: clamp(0.8rem, 2vw, 1.5rem);
   font-weight: 600;
 }
 
@@ -28,11 +27,12 @@
 .content img {
   margin-left: -4px;
   padding: 0.2rem 0.3rem;
-  width: 130px;
+  width: clamp(90px, 9vw, 130px);
 }
 
 .content button {
   margin-top: 1rem;
+  font-size: clamp(0.75rem, 1.5vw, 1.1rem) !important;
   background-color: var(--secondary-clr);
   align-self: flex-start;
 }

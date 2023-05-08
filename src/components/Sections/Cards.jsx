@@ -45,7 +45,7 @@ const Cards = () => {
   return (
     <section className={classes.cards}>
       <Container>
-        <h2>Lorem ipsum</h2>
+        <h2>Dizalice su dizajnirane za:</h2>
         <div className={classes.wrapper}>
           <div className={classes['left-side']}>
             <ul>

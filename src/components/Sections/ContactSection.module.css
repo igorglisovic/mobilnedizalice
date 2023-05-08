@@ -39,3 +39,9 @@
     flex-direction: column;
   }
 }
+
+@media only screen and (max-width: 840px) {
+  .contact ol {
+    justify-content: center;
+  }
+}

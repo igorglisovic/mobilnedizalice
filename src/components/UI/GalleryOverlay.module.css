@@ -1,0 +1,33 @@
+.overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  z-index: 9999999;
+  padding: 2rem clamp(1rem, 15.5vw, 18rem);
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.overlay .main {
+  width: 60%;
+}
+
+.overlay > div {
+  width: 100%;
+}
+
+@media only screen and (max-width: 650px) {
+  .overlay .main {
+    width: 100%;
+  }
+
+  .overlay {
+    padding: 2rem 1rem;
+  }
+}

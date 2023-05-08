@@ -1,7 +1,7 @@
 import Breadcrumb from '../UI/Breadcrumb'
 import Container from '../UI/Container'
 import classes from './ReferenceSection.module.css'
-import Pmtools from '../../assets/pmtools.png'
+import Pmtools from '../../assets/pmtoolsWhite.png'
 
 const Reference = () => {
   return (

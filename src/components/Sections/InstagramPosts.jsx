@@ -5,9 +5,9 @@ const InstagramPosts = () => {
   return (
     <section className={classes['instagram-posts']}>
       <Container>
-        <a target="_blank" className={classes.ig} href="/">
+        {/* <a target="_blank" className={classes.ig} href="/">
           @mobilnedizalice
-        </a>
+        </a> */}
       </Container>
     </section>
   )

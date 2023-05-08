@@ -8,7 +8,9 @@ const ONamaSection = () => {
       <Container>
         <Breadcrumb />
         <h1>O nama</h1>
-        <div className={classes['img-wrapper']}></div>
+      </Container>
+      <div className={classes['img-wrapper']}></div>
+      <Container>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
           odio? Excepturi facere tempora ut a velit provident natus aspernatur
