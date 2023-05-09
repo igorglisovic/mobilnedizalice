@@ -1,7 +1,19 @@
 import product1 from '../assets/product1.jpg'
+import product1A from '../assets/product1A.jpg'
+import product1B from '../assets/product1B.jpg'
+import product1C from '../assets/product1C.jpg'
 import product2 from '../assets/product2.jpg'
+import product2A from '../assets/product2A.jpeg'
+import product2B from '../assets/product2B.jpg'
+import product2C from '../assets/product2C.jpg'
 import product3 from '../assets/product3.jpg'
+import product3A from '../assets/product3A.jpg'
+import product3B from '../assets/product3B.jpg'
+import product3C from '../assets/product3C.jpg'
 import product4 from '../assets/product4.jpg'
+import product4A from '../assets/product4A.jpg'
+import product4B from '../assets/product4B.jpg'
+import product4C from '../assets/product4C.jpg'
 import product5 from '../assets/product5.jpg'
 import product5A from '../assets/product5A.jpg'
 import product5B from '../assets/product5B.jpg'
@@ -25,10 +37,8 @@ import product10A from '../assets/product10A.jpg'
 import product11 from '../assets/product11.jpg'
 import product11A from '../assets/product11A.jpg'
 import product11B from '../assets/product11B.jpg'
-import img1 from '../assets/dizalica.png'
-import img2 from '../assets/image2.jpeg'
 
-export const groups = ['dizalice', 'pumpe', 'pribor']
+export const groups = ['Dizalice', 'Pumpe', 'Pribor']
 
 export const products = [
   {
@@ -39,8 +49,8 @@ export const products = [
       'Tehnički podaci: minimalna visina: 100mm maksimalna visina: 1000mm širina: 1070mm dužina: 2600mm maksimalni kapacitet dizanja: 2800KG težina: 270KG',
     ],
     thumb: product1,
-    images: [product1, img1, img1, img1],
-    group: 'dizalice',
+    images: [product1, product1A, product1B, product1C],
+    group: 'Dizalice',
     name: 'pm-lift-extended-mobile-lift',
   },
   {
@@ -51,20 +61,20 @@ export const products = [
       'Tehnički podaci: minimalna visina: 100mm maksimalna visina: 1000mm širina: 1150mm dužina: 3100mm maksimalni kapacitet dizanja: 2800KG težina: 310KG',
     ],
     thumb: product2,
-    images: [product2, img2, img1, img2],
-    group: 'dizalice',
+    images: [product2, product2A, product2B, product2C],
+    group: 'Dizalice',
     name: 'pm-lift-extended-plus-mobile-lift',
   },
   {
     id: 3,
     title: 'PM Lift Extended Plus S mobile lift',
     description: [
-      'Ovaj proizvod je...',
+      'Specijalna verzija, za automobile koji nemaju pragove. Ova dizalica vam omogućava da koristite jake tačke blizu vešanja.',
       'Tehnički podaci: minimalna visina: 100 mm maksimalna visina: 1000 mm širina: 1010 mm dužina: 3100 mm maksimalni kapacitet dizanja: 2800KG težina: 300 kg',
     ],
     thumb: product3,
-    images: [product3, img2, img1, img2],
-    group: 'dizalice',
+    images: [product3, product3A, product3B, product3C],
+    group: 'Dizalice',
     name: 'pm-lift-extended-plus-s-mobile-lift',
   },
   {
@@ -75,8 +85,8 @@ export const products = [
       'Tehnički podaci: minimalna visina: 100 mm maksimalna visina: 1000 mm širina: 1010 mm dužina: 2600 mm maksimalni kapacitet dizanja: 2800KG težina: 260 kg',
     ],
     thumb: product4,
-    images: [product4, img2, img1, img2],
-    group: 'dizalice',
+    images: [product4, product4A, product4B, product4C],
+    group: 'Dizalice',
     name: 'pm-lift-extended-s-mobile-lift',
   },
   {
@@ -88,7 +98,7 @@ export const products = [
     ],
     thumb: product5,
     images: [product5, product5A, product5B, product5C, product5D],
-    group: 'pribor',
+    group: 'Pribor',
     name: 'celicne-rampe',
   },
   {
@@ -100,7 +110,7 @@ export const products = [
     ],
     thumb: product6,
     images: [product6, product6A, product6B, product6C],
-    group: 'pribor',
+    group: 'Pribor',
     name: 'stalci-za-tockove',
   },
   {
@@ -112,7 +122,7 @@ export const products = [
     ],
     thumb: product7,
     images: [product7, product7A, product7B, product7C],
-    group: 'pumpe',
+    group: 'Pumpe',
     name: 'elektricna-pumpa-12v',
   },
   {
@@ -124,7 +134,7 @@ export const products = [
     ],
     thumb: product8,
     images: [product8, product8A],
-    group: 'pumpe',
+    group: 'Pumpe',
     name: 'elektricna-pumpa-230v',
   },
   {
@@ -136,7 +146,7 @@ export const products = [
     ],
     thumb: product9,
     images: [product9, product9A, product9B],
-    group: 'pumpe',
+    group: 'Pumpe',
     name: 'pneumatska-pumpa',
   },
   {
@@ -147,7 +157,7 @@ export const products = [
     ],
     thumb: product10,
     images: [product10, product10A],
-    group: 'pribor',
+    group: 'Pribor',
     name: 'sistem-utovara',
   },
   {
@@ -158,7 +168,7 @@ export const products = [
     ],
     thumb: product11,
     images: [product11, product11A, product11B],
-    group: 'pribor',
+    group: 'Pribor',
     name: 'mobilni-sistem',
   },
 ]

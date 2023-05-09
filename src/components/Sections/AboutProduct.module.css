@@ -10,9 +10,17 @@
   margin-bottom: 1rem;
 }
 
-.wrapper button {
+.wrapper a {
   margin-top: 30px;
-  font-size: 1.2rem;
+  display: inline-block;
+  background-color: var(--main-clr);
+  border: none;
+  padding: 0.5em 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: clamp(1rem, 1.7vw, 1.3rem) !important;
 }
 
 .left-side,
@@ -45,7 +53,7 @@
   margin-top: 8rem;
 }
 
-.right-side button {
+.right-side a {
   background-color: var(--secondary-clr);
 }
 

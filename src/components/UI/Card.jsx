@@ -62,8 +62,8 @@ const Card = ({ list, slider }) => {
                     <img src={product?.thumb} alt="" />
                   </div>
                   <div className={classes.content}>
-                    <h3>{product.title}</h3>
                     <img src={Pmtools} alt="" />
+                    <h3>{product.title}</h3>
                     <button onClick={() => OnClickHandler(product.id)}>
                       Saznaj više
                     </button>
@@ -81,8 +81,8 @@ const Card = ({ list, slider }) => {
                 <img src={product?.thumb} alt="" />
               </div>
               <div className={classes.content}>
-                <h3>{product.title}</h3>
                 <img src={Pmtools} alt="" />
+                <h3>{product.title}</h3>
                 <button onClick={() => OnClickHandler(product.id)}>
                   Saznaj više
                 </button>

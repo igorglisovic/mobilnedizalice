@@ -29,7 +29,8 @@ video {
   max-width: 100%;
 }
 
-button {
+button,
+.button {
   background-color: var(--main-clr);
   border: none;
   padding: 0.5em 2em;

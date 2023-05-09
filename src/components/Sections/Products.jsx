@@ -2,10 +2,7 @@ import classes from './Products.module.css'
 import Container from '../UI/Container'
 import BreadCrumb from '../UI/Breadcrumb'
 import { groups, products } from '../../data/products'
-
 import { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { useProductContext } from '../../context/ProductContext'
 import Card from '../UI/Card'
 
 const Products = () => {
@@ -13,6 +10,12 @@ const Products = () => {
   const [mediaMatches, setMediaMatches] = useState(false)
 
   const onClickFilterHandler = e => {
+    if (e.target.innerText === 'Obriši filtere') {
+      setProductsList(products)
+      console.log(e.target.innerText)
+      return
+    }
+
     setProductsList(
       products.filter(item => {
         if (item.group === e.target.innerText.slice(2)) {
@@ -69,19 +72,22 @@ const Products = () => {
             </div>
           )}
           {mediaMatches ? (
-            <select
-              onChange={onChangeFilterHandler}
-              defaultValue="kategorije"
-              name=""
-              id=""
-            >
-              <option value="kategorije" disabled selected hidden>
-                Kategorije
-              </option>
-              {groups.map((group, i) => (
-                <option key={i}>{group}</option>
-              ))}
-            </select>
+            <>
+              <select
+                onChange={onChangeFilterHandler}
+                defaultValue="kategorije"
+                name=""
+                id=""
+              >
+                <option value="kategorije" disabled selected hidden>
+                  Kategorije
+                </option>
+                {groups.map((group, i) => (
+                  <option key={i}>{group}</option>
+                ))}
+              </select>
+              {/* <span onClick={e => onClickFilterHandler(e)}>Obriši filtere</span> */}
+            </>
           ) : (
             <aside>
               <h3>Kategorije</h3>
@@ -91,6 +97,7 @@ const Products = () => {
                     • {group}
                   </li>
                 ))}
+                <li onClick={e => onClickFilterHandler(e)}>Obriši filtere</li>
               </ul>
             </aside>
           )}

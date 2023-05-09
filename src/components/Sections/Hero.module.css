@@ -9,7 +9,7 @@
   min-height: 100%;
   max-width: initial;
   min-width: 100%;
-  filter: brightness(80%);
+  filter: brightness(50%);
 }
 
 .carousel-caption {
@@ -33,7 +33,11 @@
 }
 
 .hero button {
-  font-size: 1.2rem;
+  transition: background-color 0.2s;
+}
+
+.hero button:hover {
+  background-color: var(--secondary-clr);
 }
 
 .icons {
@@ -74,7 +78,7 @@
 }
 
 .phone-wrapper img {
-  width: clamp(32px, 5vw, 40px);
+  width: clamp(28px, 5vw, 40px);
 }
 
 .location-wrapper {
@@ -90,7 +94,7 @@
 }
 
 .location-wrapper img {
-  width: clamp(32px, 5vw, 40px);
+  width: clamp(28px, 5vw, 40px);
 }
 
 @media only screen and (max-width: 785px) {
@@ -120,6 +124,7 @@
 @media only screen and (max-width: 600px) {
   .icons {
     top: 13%;
+    gap: 0.8rem;
   }
   .carousel-caption {
     bottom: 17%;

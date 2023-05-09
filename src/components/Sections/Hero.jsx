@@ -33,7 +33,7 @@ const Hero = () => {
         loop={true}
         pagination={{ clickable: true }}
         speed={800}
-        autoplay={{ delay: 4000000 }}
+        autoplay={{ delay: 4000 }}
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>

@@ -1,6 +1,7 @@
 import classes from './AboutProduct.module.css'
 import Container from '../UI/Container'
 import dizalica from '../../assets/dizalica.png'
+import { Link } from 'react-router-dom'
 
 const AboutProduct = () => {
   return (
@@ -15,7 +16,7 @@ const AboutProduct = () => {
               konkurentnost. Naši klijenti su radionice za generalne popravke,
               vulkanizere, reklamne kuće (automatske), karoserije i farbanje.
             </p>
-            <button>Dugme</button>
+            <Link to="/kontakt">Kontakt</Link>
           </div>
           <div className={classes['right-side']}>
             <h2>Individualni klijenti</h2>
@@ -27,7 +28,7 @@ const AboutProduct = () => {
               da tražite od svojih prijatelja da podele radionicu, sami ste sebi
               majstor i radite kada želite.
             </p>
-            <button>Dugme</button>
+            <Link to="/kontakt">Kontakt</Link>
           </div>
         </div>
         <div className={classes['img-wrapper']}>

@@ -35,7 +35,7 @@ const VideoSection = () => {
               Poljskoj, sa akcentom na kvalitet i, pre svega, izdržljivost,
               tačnost zahvaljujući laserskom rezanju.
             </p>
-            <button>Poruci odmah!</button>
+            <a href="tel:123-456-7890">Porucite odmah!</a>
           </div>
         </Container>
       </div>

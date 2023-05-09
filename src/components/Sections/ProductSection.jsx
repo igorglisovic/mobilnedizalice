@@ -2,19 +2,14 @@ import Breadcrumb from '../UI/Breadcrumb'
 import Container from '../UI/Container'
 import classes from './ProductSection.module.css'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import Pmtools from '../../assets/PmToolsWhite.png'
-
+import Pmtools from '../../assets/PmTools.png'
 import { Navigation } from 'swiper'
-
 import 'swiper/swiper-bundle.min.css'
-
 import 'swiper/css'
-
-import { useProductContext } from '../../context/ProductContext'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import { products } from '../../data/products'
 import Card from '../UI/Card'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 
 const ProductSection = () => {
   const params = useParams().productId.slice(1)
@@ -63,16 +58,14 @@ const ProductSection = () => {
           </div>
           <div className={classes.content}>
             <h1>{clickedProduct.title}</h1>
+            <img className={classes['pm-tools']} src={Pmtools} />
             <div className={classes.description}>
               <h2>Opis proizvoda</h2>
               {clickedProduct.description.map((el, i) => (
                 <p key={i}>{el}</p>
               ))}
-              <p>
-                Brend: <img className={classes['pm-tools']} src={Pmtools} />
-              </p>
             </div>
-            <button>Poruci</button>
+            <button>Poruči</button>
           </div>
         </div>
         <div className={classes['related-products']}>

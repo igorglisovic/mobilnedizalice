@@ -28,16 +28,32 @@
   gap: 1rem;
 }
 
-.wrapper button {
+.wrapper a {
   align-self: center;
   background-color: var(--secondary-clr);
   margin-top: 1rem;
   font-size: 1.2rem;
+  transition: background-color 0.2s;
+  /* display: inline-block; */
+  padding: 0.5em 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: clamp(1rem, 1.7vw, 1.3rem) !important;
+}
+
+.wrapper a:hover {
+  background-color: var(--main-clr);
 }
 
 @media only screen and (max-width: 600px) {
   .wrapper {
     width: 130%;
+  }
+
+  .wrapper .content {
+    gap: 0.4rem;
   }
 }
 

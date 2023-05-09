@@ -18,6 +18,11 @@
 .grid-item {
   background-size: cover;
   cursor: pointer;
+  transition: filter 0.3s;
+}
+
+.grid-item:hover {
+  filter: brightness(60%);
 }
 
 .grid-item:nth-child(1) {

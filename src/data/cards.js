@@ -1,9 +1,12 @@
 import img1 from '../assets/image2.jpeg'
 import img2 from '../assets/image1.jpg'
+import card3 from '../assets/card3.jpeg'
+import card5 from '../assets/card5.jpg'
+import card6 from '../assets/card6.jpg'
 
 export const cards = [
   {
-    title: 'Automobili',
+    title: 'Automobile',
     description:
       'VDV Lift Ektended lift je dizajniran za opštu upotrebu za podizanje automobila od VV Pola do BMV 7',
     img: img2,
@@ -17,30 +20,30 @@ export const cards = [
     active: false,
   },
   {
-    title: 'Vans',
+    title: 'Kombije',
     description:
       'VDV Lift Ektended Plus je produžena verzija (3,1 m) i sklapa se za podizanje dužih automobila kao što su dugačka verzija VV T4, T5, T6, Chrisler Voiager, Opel Movano, R-Klasa, Fiat Ducato, Mercedes Sprinter, Citroen Berlingo, Peugeot Boker, Amerikanac',
-    img: img2,
+    img: card3,
     active: false,
   },
   {
-    title: 'Traktori',
+    title: 'Traktore',
     description: 'Konačno, domaćin je u mogućnosti da sam izvrši popravke.',
     img: img1,
     active: false,
   },
   {
-    title: 'Trkački automobili',
+    title: 'Trkačke automobile',
     description:
       'Zahvaljujući minimalnoj visini od 100 mm, u stanju je da podigne čak i trkačke automobile.',
-    img: img2,
+    img: card5,
     active: false,
   },
   {
-    title: 'Oldtajmeri',
+    title: 'Oldtajmere',
     description:
       'Da biste obnovili automobil, ponekad je potrebno nekoliko godina da se automobil dovede do savršenstva. Savršeno za održavanje. Uski VDV Lift Ektended S specijalno dizajniran za kupce sa automobilima TR4, TR6, Spitfire, Honda S800, Austin Healei, Catterham.',
-    img: img1,
+    img: card6,
     active: false,
   },
   {
