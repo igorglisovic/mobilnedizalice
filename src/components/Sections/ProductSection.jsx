@@ -10,13 +10,18 @@ import { useState } from 'react'
 import { products } from '../../data/products'
 import Card from '../UI/Card'
 import { useParams } from 'react-router-dom'
+import { useEffect } from 'react'
 
 const ProductSection = () => {
   const params = useParams().productId.slice(1)
   const clickedProduct = products.find(product => product.name === params)
 
-  const [mainImage, setMainImage] = useState(clickedProduct.images[0])
+  const [mainImage, setMainImage] = useState(clickedProduct.thumb)
   const clickedProductGroup = clickedProduct.group
+
+  useEffect(() => {
+    setMainImage(clickedProduct.thumb)
+  }, [clickedProduct])
 
   const relatedProducts = products.filter(
     product =>

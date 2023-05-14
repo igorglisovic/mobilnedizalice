@@ -30,6 +30,21 @@ footer {
   color: #fff;
 }
 
+.secondary-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secondary-wrapper p:last-of-type {
+  color: #ccc;
+  font-size: 1rem;
+}
+
+.secondary-wrapper p:last-of-type a:hover {
+  color: var(--secondary-clr);
+}
+
 @media only screen and (max-width: 930px) {
   .main {
     flex-direction: column;

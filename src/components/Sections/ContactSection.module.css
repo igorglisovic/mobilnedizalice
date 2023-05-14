@@ -34,6 +34,14 @@
   fill: var(--secondary-clr);
 }
 
+.icons svg path:nth-child(1) {
+  transition: fill 0.3s;
+}
+
+.icons a:hover svg path:nth-child(1) {
+  fill: var(--main-clr);
+}
+
 @media only screen and (max-width: 930px) {
   .wrapper {
     flex-direction: column;

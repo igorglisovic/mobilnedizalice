@@ -53,7 +53,9 @@ const Hero = () => {
         </div>
         <div className={classes['location-wrapper']}>
           <img src={InstagramIcon} alt="" />
-          <a href="tel:123-456-7890">@mobilnedizalice</a>
+          <a href="https://www.instagram.com/mobilnedizalice/" target="_blank">
+            @mobilnedizalice
+          </a>
         </div>
       </div>
     </section>

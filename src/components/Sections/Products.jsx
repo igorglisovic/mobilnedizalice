@@ -8,13 +8,19 @@ import Card from '../UI/Card'
 const Products = () => {
   const [productsList, setProductsList] = useState(products)
   const [mediaMatches, setMediaMatches] = useState(false)
+  const [isFiltered, setIsFiltered] = useState(false)
+  const [selectedValue, setSelectedValue] = useState('kategorije')
 
   const onClickFilterHandler = e => {
-    if (e.target.innerText === 'Obriši filtere') {
+    if (e.target.innerText === 'Obriši filtere' && isFiltered) {
       setProductsList(products)
       console.log(e.target.innerText)
+      setSelectedValue('kategorije')
+      setIsFiltered(false)
       return
     }
+
+    setIsFiltered(true)
 
     setProductsList(
       products.filter(item => {
@@ -27,6 +33,10 @@ const Products = () => {
 
   const onChangeFilterHandler = e => {
     if (e.target.value === 'kategorije') return
+
+    setIsFiltered(true)
+
+    setSelectedValue(e.target.value)
 
     setProductsList(
       products.filter(item => {
@@ -72,10 +82,11 @@ const Products = () => {
             </div>
           )}
           {mediaMatches ? (
-            <>
+            <div className={classes['select-wrapper']}>
               <select
                 onChange={onChangeFilterHandler}
                 defaultValue="kategorije"
+                value={selectedValue}
                 name=""
                 id=""
               >
@@ -86,8 +97,12 @@ const Products = () => {
                   <option key={i}>{group}</option>
                 ))}
               </select>
-              {/* <span onClick={e => onClickFilterHandler(e)}>Obriši filtere</span> */}
-            </>
+              {isFiltered && (
+                <span onClick={e => onClickFilterHandler(e)}>
+                  Obriši filtere
+                </span>
+              )}
+            </div>
           ) : (
             <aside>
               <h3>Kategorije</h3>
@@ -97,7 +112,9 @@ const Products = () => {
                     • {group}
                   </li>
                 ))}
-                <li onClick={e => onClickFilterHandler(e)}>Obriši filtere</li>
+                {isFiltered && (
+                  <li onClick={e => onClickFilterHandler(e)}>Obriši filtere</li>
+                )}
               </ul>
             </aside>
           )}

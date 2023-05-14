@@ -30,7 +30,15 @@ const Footer = () => {
       </Container>
       <div className={classes.secondary}>
         <Container>
-          <p>© 2022 MobilneDizalice © Sva prava zadržana.</p>
+          <div className={classes['secondary-wrapper']}>
+            <p>© 2022 MobilneDizalice © Sva prava zadržana.</p>
+            <p>
+              Developed by{' '}
+              <a href="https://igorglisovic.com/" target="_blank">
+                Igor
+              </a>
+            </p>
+          </div>
         </Container>
       </div>
     </footer>

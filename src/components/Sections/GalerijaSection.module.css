@@ -21,7 +21,8 @@
   transition: filter 0.3s;
 }
 
-.grid-item:hover {
+.grid-item:hover,
+.secondary-photo:hover {
   filter: brightness(60%);
 }
 
@@ -78,10 +79,10 @@
 }
 
 .secondary-photo {
-  /* width: clamp(70px, 10vw, 150px); */
   aspect-ratio: 1;
   background-size: cover;
   cursor: pointer;
+  transition: filter 0.3s;
 }
 
 @media only screen and (max-width: 840px) {

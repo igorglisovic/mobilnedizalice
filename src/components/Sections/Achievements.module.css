@@ -18,6 +18,7 @@
   text-align: center;
 }
 
+.wrapper h3 span,
 .wrapper h3 {
   font-size: clamp(3.2rem, 5.5vw, 4.5rem);
   font-weight: 800;
