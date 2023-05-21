@@ -17,6 +17,7 @@
 
 .grid-item {
   background-size: cover;
+  background-position: center;
   cursor: pointer;
   transition: filter 0.3s;
 }

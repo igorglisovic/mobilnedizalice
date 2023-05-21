@@ -49,7 +49,7 @@ const Hero = () => {
       <div className={classes.icons}>
         <div className={classes['phone-wrapper']}>
           <img src={phoneIcon} alt="" />
-          <a href="tel:123-456-7890">+123 456 78 90</a>
+          <a href="tel:+38132370730">+381 32 370 730 </a>
         </div>
         <div className={classes['location-wrapper']}>
           <img src={InstagramIcon} alt="" />

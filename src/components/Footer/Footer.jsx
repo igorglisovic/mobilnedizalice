@@ -11,18 +11,19 @@ const Footer = () => {
             <div>
               <h2>Javite nam se.</h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum,
-                dignissimos! Dolor autem earum voluptatibus blanditiis
-                distinctio corporis quidem eos porro?
+                Treba vam naša pomoć? Izaberite najpovoljniji način da nas
+                kontaktirate.
               </p>
             </div>
             <div>
-              <h3>Mail</h3>
-              <a href="mailto:email@example.com">email@email.com</a>
+              <h3>E-Mail</h3>
+              <a href="mailto:info@mobilnedizalice.com">
+                info@mobilnedizalice.com
+              </a>
             </div>
             <div>
-              <h3>Phone</h3>
-              <a href="tel:123-456-7890">+123 456 78 90</a>
+              <h3>Telefon</h3>
+              <a href="tel:+38132370730">+381 32 370 730 </a>
             </div>
           </div>
           <ContactForm />

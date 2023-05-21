@@ -12,20 +12,21 @@ const ContactSection = () => {
           <div className={classes['contact-info']}>
             <h2>Javite nam se.</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptate tempora dicta facere assumenda autem molestias officia
-              cupiditate reiciendis dolor culpa?
+              Treba vam naša pomoć? Izaberite najpovoljniji način da nas
+              kontaktirate.
             </p>
             <div>
               <h3>E-mail</h3>
               <p>
-                <a href="mailto:info@example.com">info@example.com</a>
+                <a href="mailto:info@mobilnedizalice.com">
+                  info@mobilnedizalice.com
+                </a>
               </p>
             </div>
             <div>
               <h3>Telefon</h3>
               <p>
-                <a href="tel:+1-123-456-7890">+1 (123) 456-7890</a>
+                <a href="tel:+381-323-70-730 ">+381 32 370 730 </a>
               </p>
             </div>
             <div className={`${classes.icons} icons`}>

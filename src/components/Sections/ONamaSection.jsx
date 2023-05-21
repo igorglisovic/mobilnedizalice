@@ -12,23 +12,22 @@ const ONamaSection = () => {
       <div className={classes['img-wrapper']}></div>
       <Container>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
-          odio? Excepturi facere tempora ut a velit provident natus aspernatur
-          amet, repellendus at earum autem blanditiis voluptates alias nemo
-          tempore quos ipsam? Nemo dolorem a fuga laudantium saepe cupiditate,
-          voluptatibus atque officia beatae, possimus iste illo aspernatur
-          itaque officiis iusto rerum placeat error laborum est soluta
-          recusandae, quasi explicabo ab quam? Iure fuga odit expedita nam porro
-          ipsum quisquam libero autem!
+          Mi smo vodeći uvoznik mobilnih dizalica za Srbiju, Crnu Goru i Bosnu i
+          Hercegovinu. Sarađujemo sa renomiranim proizvođačem PM Tools i nudimo
+          vrhunsku opremu za podizanje automobila.
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum
-          dignissimos! Corrupti vero aut repudiandae, minima nulla soluta quis
-          similique blanditiis obcaecati, architecto earum! Nemo praesentium
-          amet itaque, optio, dolorum nostrum, doloremque velit autem animi
-          minima quos iure et ratione odio quidem. Itaque laudantium iusto, iste
-          esse voluptatem omnis illum adipisci quasi harum. Error fugiat quis a
-          iste excepturi officiis.
+          Naš tim stručnjaka vam pruža podršku pri odabiru prave mobilne auto
+          dizalice, uz servisiranje i održavanje za dugotrajnu pouzdanost.
+          Kvalitet, pouzdanost i sigurnost su naš prioritet.
+        </p>
+        <p>
+          Kontaktirajte nas danas za više informacija o našim proizvodima i
+          uslugama.
+        </p>
+        <p>
+          MobilneDizalice.com - Vaš pouzdani partner za mobilne dizalice PM
+          Tools u Srbiji, Crnoj Gori i Bosni i Hercegovini!
         </p>
         <div className="icons">
           <a href="https://www.instagram.com/mobilnedizalice/" target="_blank">

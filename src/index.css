@@ -61,11 +61,13 @@ body {
 .swiper-button-prev {
   color: var(--secondary-clr);
   font-weight: 800;
+  transition: color 0.3s;
 }
 
 .swiper-button-next {
   color: var(--secondary-clr);
   font-weight: 800;
+  transition: color 0.3s;
 }
 
 .hero .swiper-button-prev,
@@ -121,6 +123,11 @@ body {
 .hero .swiper-button-next {
   right: 0;
   padding: 4rem 1.8rem 4rem 2.2rem;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: var(--main-clr) !important;
 }
 
 .related .swiper-wrapper {

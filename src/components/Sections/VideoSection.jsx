@@ -31,11 +31,12 @@ const VideoSection = () => {
             <h2>Fokusiramo se na kvalitet</h2>
             <p>
               Koliko puta ste kupili nešto jeftino, a zatim drugi put pravilno
-              kupili? Sa nama ne morate da brinete. Lift je 100% proizveden u
-              Poljskoj, sa akcentom na kvalitet i, pre svega, izdržljivost,
-              tačnost zahvaljujući laserskom rezanju.
+              kupili? Sa PM Tools dobijate profesionalni alat u ruke i ne morate
+              da brinete. PM Tools mobilne dizalice su 100% proizvedene u
+              Poljskoj, sa naglaskom na kvalitetu pre svega, izdržljivosti,
+              preciznošću zahvaljujući preciznim laserskim sečenjem.
             </p>
-            <a href="tel:123-456-7890">Porucite odmah!</a>
+            <a href="tel:+38132370730">Poručite odmah!</a>
           </div>
         </Container>
       </div>

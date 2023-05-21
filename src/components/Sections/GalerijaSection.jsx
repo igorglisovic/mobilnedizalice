@@ -1,8 +1,5 @@
-import {
-  mainPhotos,
-  secondaryPhotos,
-  mainPhotosOnPhone,
-} from '../../data/galerija'
+import { mainPhotos, mainPhotosOnPhone } from '../../data/galerija'
+import secondaryPhotos from '../../data/galerija'
 import Breadcrumb from '../UI/Breadcrumb'
 import Container from '../UI/Container'
 import classes from './GalerijaSection.module.css'
@@ -40,8 +37,8 @@ const GalerijaSection = () => {
     })
   }, [])
 
-  const onClickHandler = photo => {
-    setCurrentPhoto(photo)
+  const onClickHandler = (photo, i) => {
+    setCurrentPhoto(i)
     setIsOpened(true)
   }
 
@@ -67,7 +64,7 @@ const GalerijaSection = () => {
                     className={classes['grid-item']}
                     key={i}
                     style={{ backgroundImage: `url(${photo.src})` }}
-                    onClick={() => onClickHandler(photo)}
+                    onClick={() => onClickHandler(photo, i)}
                   />
                 ))
               : mainPhotos.map((photo, i) => (
@@ -75,7 +72,7 @@ const GalerijaSection = () => {
                     className={classes['grid-item']}
                     key={i}
                     style={{ backgroundImage: `url(${photo.src})` }}
-                    onClick={() => onClickHandler(photo)}
+                    onClick={() => onClickHandler(photo, i)}
                   />
                 ))}
           </div>
@@ -84,15 +81,13 @@ const GalerijaSection = () => {
             spaceBetween={10}
             slidesPerView={6}
             navigation
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={swiper => console.log(swiper)}
           >
             {secondaryPhotos.map((photo, i) => (
               <SwiperSlide key={i}>
                 <div
                   className={classes['secondary-photo']}
                   style={{ backgroundImage: `url(${photo.src})` }}
-                  onClick={() => onClickHandler(photo)}
+                  onClick={() => onClickHandler(photo, 9 + i)}
                 ></div>
               </SwiperSlide>
             ))}

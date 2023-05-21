@@ -11,16 +11,27 @@ const Reference = () => {
         <h1>Reference</h1>
         <div className={classes.wrapper}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
-            laudantium ratione accusamus rerum obcaecati, aliquam ipsum quos
-            fugiat, maiores cumque dolorem molestias molestiae ipsa esse at
-            sequi asperiores corrupti. Quam doloribus modi voluptatem possimus
-            voluptatum. Laboriosam eum fuga voluptatem suscipit, molestias ipsum
-            quae vel delectus dolorum numquam quisquam dignissimos quaerat
-            deserunt quasi sed repellat unde ullam! Possimus quisquam illum
-            expedita sapiente quis provident dolorum, aperiam doloremque est
-            nulla dignissimos ipsam! Enim dicta a culpa saepe placeat
-            repellendus? Consequuntur, quas. Magnam.
+            1. "Mobilne dizalice su naš pouzdani partner za nabavku dizalica za
+            podizanje automobila. Njihova oprema je visokog kvaliteta i pruža
+            nam neophodnu snagu i stabilnost pri podizanju tereta."
+          </p>
+          <p>
+            2. "Saradnja sa kompanijom Mobilne dizalice je prevazišla naša
+            očekivanja. Njihove dizalice za podizanje automobila su se pokazale
+            kao izuzetno efikasne i pouzdane, omogućavajući nam da obavimo čak i
+            najzahtevnije zadatke."
+          </p>
+          <p>
+            3. "Hvala kompaniji Mobilne dizalice na vrhunskoj podršci i
+            kvalitetnim dizalicama za podizanje automobila. Njihova oprema je
+            izuzetno jednostavna za upotrebu, pruža nam fleksibilnost i povećava
+            našu produktivnost u servisiranju vozila."
+          </p>
+          <p>
+            4. "Mobilne dizalice su nam omogućile da unapredimo našu operativu
+            kroz njihove vrhunske dizalice za podizanje automobila. Njihova
+            preciznost i izdržljivost su nam pomogle da efikasno podižemo i
+            spuštamo vozila u našem servisnom centru."
           </p>
           <img src={Pmtools} alt="" />
         </div>

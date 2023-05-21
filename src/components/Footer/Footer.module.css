@@ -30,6 +30,14 @@ footer {
   color: #fff;
 }
 
+.main-left a {
+  transition: color 0.3s;
+}
+
+.main-left a:hover {
+  color: var(--secondary-clr);
+}
+
 .secondary-wrapper {
   display: flex;
   justify-content: space-between;
@@ -48,5 +56,15 @@ footer {
 @media only screen and (max-width: 930px) {
   .main {
     flex-direction: column;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .secondary-wrapper p:last-of-type {
+    font-size: 0.85rem;
+  }
+
+  .secondary-wrapper {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }

@@ -32,6 +32,8 @@ const ProductSection = () => {
     setMainImage(image)
   }
 
+  const onClickImgHandler = () => {}
+
   return (
     <section className={classes.product}>
       <Container>
@@ -39,7 +41,7 @@ const ProductSection = () => {
         <div className={classes.wrapper}>
           <div className={classes['images']}>
             <div className={classes['main-image']}>
-              <img src={mainImage} alt="" />
+              <img onClick={onClickImgHandler} src={mainImage} alt="" />
             </div>
             <div className={classes['other-images']}>
               <Swiper
@@ -66,15 +68,23 @@ const ProductSection = () => {
             <img className={classes['pm-tools']} src={Pmtools} />
             <div className={classes.description}>
               <h2>Opis proizvoda</h2>
-              {clickedProduct.description.map((el, i) => (
-                <p key={i}>{el}</p>
-              ))}
+              {clickedProduct.description && (
+                <p>{clickedProduct.description}</p>
+              )}
+              {clickedProduct.technical_description && (
+                <div className={classes['technical-description']}>
+                  <p>Tehnički podaci:</p>
+                  {clickedProduct.technical_description.map((el, i) => (
+                    <p key={i}>- {el}</p>
+                  ))}
+                </div>
+              )}
             </div>
-            <button>Poruči</button>
+            <a href="tel:+38132370730">Poruči</a>
           </div>
         </div>
         <div className={classes['related-products']}>
-          <h2>Slicni proizvodi</h2>
+          <h2>Slični proizvodi</h2>
           <Card slider={true} list={relatedProducts} />
         </div>
       </Container>
