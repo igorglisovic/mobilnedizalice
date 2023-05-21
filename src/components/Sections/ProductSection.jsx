@@ -11,8 +11,12 @@ import { products } from '../../data/products'
 import Card from '../UI/Card'
 import { useParams } from 'react-router-dom'
 import { useEffect } from 'react'
+import GalleryOverlay from '../UI/GalleryOverlay'
+import { createPortal } from 'react-dom'
 
 const ProductSection = () => {
+  const [isOpened, setIsOpened] = useState(false)
+  const [currentPhoto, setCurrentPhoto] = useState()
   const params = useParams().productId.slice(1)
   const clickedProduct = products.find(product => product.name === params)
 
@@ -28,20 +32,36 @@ const ProductSection = () => {
       product.group === clickedProductGroup && product !== clickedProduct
   )
 
-  const onClickHandler = image => {
+  const onClickHandler = (image, i) => {
+    setCurrentPhoto(i)
     setMainImage(image)
+    setIsOpened(true)
   }
-
-  const onClickImgHandler = () => {}
 
   return (
     <section className={classes.product}>
+      {isOpened &&
+        createPortal(
+          <GalleryOverlay
+            onClickHandler={onClickHandler}
+            setIsOpened={setIsOpened}
+            currentPhoto={currentPhoto}
+            images={clickedProduct.images}
+          />,
+          document.getElementById('overlays')
+        )}
       <Container>
         <Breadcrumb />
         <div className={classes.wrapper}>
           <div className={classes['images']}>
             <div className={classes['main-image']}>
-              <img onClick={onClickImgHandler} src={mainImage} alt="" />
+              <img
+                onClick={() =>
+                  onClickHandler('', clickedProduct.images[0].indexOf())
+                }
+                src={clickedProduct.images[0]}
+                alt=""
+              />
             </div>
             <div className={classes['other-images']}>
               <Swiper
@@ -50,14 +70,13 @@ const ProductSection = () => {
                 slidesPerView={3}
                 navigation
               >
-                {clickedProduct.images.map((image, i) => (
+                {clickedProduct.images.map((photo, i) => (
                   <SwiperSlide key={i}>
-                    <img
-                      onClick={() => onClickHandler(image)}
-                      className={classes['other-image']}
-                      src={image}
-                      alt=""
-                    />
+                    <div
+                      className={classes['secondary-photo']}
+                      style={{ backgroundImage: `url(${photo})` }}
+                      onClick={() => onClickHandler(photo, i)}
+                    ></div>
                   </SwiperSlide>
                 ))}
               </Swiper>

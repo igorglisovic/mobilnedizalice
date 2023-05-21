@@ -6,7 +6,12 @@ import 'swiper/css'
 import { allImages } from '../../data/galerija'
 import { useEffect, useState } from 'react'
 
-const GalleryOverlay = ({ currentPhoto, onClickHandler, setIsOpened }) => {
+const GalleryOverlay = ({
+  currentPhoto,
+  onClickHandler,
+  setIsOpened,
+  images,
+}) => {
   const [mediaMatches, setMediaMatches] = useState(false)
   const [activeThumb, setActiveThumb] = useState()
 
@@ -53,12 +58,12 @@ const GalleryOverlay = ({ currentPhoto, onClickHandler, setIsOpened }) => {
           className="product-images-slider"
           initialSlide={currentPhoto}
         >
-          {allImages.map((item, index) => (
+          {images.map((item, index) => (
             <SwiperSlide key={index}>
               <div
                 className={classes['secondary-photo']}
                 style={{
-                  backgroundImage: `url(${item.src})`,
+                  backgroundImage: `url(${item})`,
                   backgroundSize: 'cover',
                   backgroundPosition: 'center',
                   width: '100%',
@@ -85,12 +90,12 @@ const GalleryOverlay = ({ currentPhoto, onClickHandler, setIsOpened }) => {
           className="product-images-slider-thumbs"
           navigation
         >
-          {allImages.map((item, index) => (
+          {images.map((item, index) => (
             <SwiperSlide key={index}>
               <div
                 className={classes['secondary-photo']}
                 style={{
-                  backgroundImage: `url(${item.src})`,
+                  backgroundImage: `url(${item})`,
                   backgroundSize: 'cover',
                   aspectRatio: 1,
                   cursor: 'pointer',

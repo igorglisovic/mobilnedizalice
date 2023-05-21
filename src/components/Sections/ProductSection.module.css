@@ -32,6 +32,10 @@
   cursor: pointer;
 }
 
+.secondary-photo:hover {
+  filter: brightness(65%);
+}
+
 .other-images {
   width: 100%;
   margin-top: 1rem;
@@ -53,6 +57,13 @@
 
 .content a:hover {
   background-color: var(--secondary-clr);
+}
+
+.secondary-photo {
+  aspect-ratio: 1;
+  background-size: cover;
+  cursor: pointer;
+  transition: filter 0.3s;
 }
 
 .content a {

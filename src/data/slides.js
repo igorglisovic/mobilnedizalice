@@ -6,22 +6,21 @@ export const slides = [
   {
     img: hero1,
     title: 'Dobrodošli na sajt!',
-    subTitle:
-      'Mobilne dizalice PM Tools su najbolje rešenje za vaš bizinis u automotive industriji.',
+    subTitle: 'Najbolje rešenje za Vaš biznis u automotive industriji.',
     interval: 2500,
   },
   {
     img: hero2,
     title: 'Dobrodošli na sajt!',
     subTitle:
-      'Mobilne dizalice PM Tools su najbolje rešenje za vaš bizinis u automotive industriji.',
+      'Mobilne dizalice PM Tools su najbolje rešenje za Vaš biznis u automotive industriji.',
     interval: 2500,
   },
   {
     img: hero3,
     title: 'Dobrodošli na sajt!',
     subTitle:
-      'Mobilne dizalice PM Tools su najbolje rešenje za vaš bizinis u automotive industriji.',
+      'Mobilne dizalice PM Tools su najbolje rešenje za Vaš biznis u automotive industriji.',
     interval: 2500,
   },
 ]

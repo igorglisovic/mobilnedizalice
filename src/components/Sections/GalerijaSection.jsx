@@ -1,4 +1,4 @@
-import { mainPhotos, mainPhotosOnPhone } from '../../data/galerija'
+import { allImages, mainPhotos, mainPhotosOnPhone } from '../../data/galerija'
 import secondaryPhotos from '../../data/galerija'
 import Breadcrumb from '../UI/Breadcrumb'
 import Container from '../UI/Container'
@@ -50,6 +50,7 @@ const GalerijaSection = () => {
             onClickHandler={onClickHandler}
             setIsOpened={setIsOpened}
             currentPhoto={currentPhoto}
+            images={allImages}
           />,
           document.getElementById('overlays')
         )}
@@ -63,7 +64,7 @@ const GalerijaSection = () => {
                   <div
                     className={classes['grid-item']}
                     key={i}
-                    style={{ backgroundImage: `url(${photo.src})` }}
+                    style={{ backgroundImage: `url(${photo})` }}
                     onClick={() => onClickHandler(photo, i)}
                   />
                 ))
@@ -71,7 +72,7 @@ const GalerijaSection = () => {
                   <div
                     className={classes['grid-item']}
                     key={i}
-                    style={{ backgroundImage: `url(${photo.src})` }}
+                    style={{ backgroundImage: `url(${photo})` }}
                     onClick={() => onClickHandler(photo, i)}
                   />
                 ))}
@@ -86,7 +87,7 @@ const GalerijaSection = () => {
               <SwiperSlide key={i}>
                 <div
                   className={classes['secondary-photo']}
-                  style={{ backgroundImage: `url(${photo.src})` }}
+                  style={{ backgroundImage: `url(${photo})` }}
                   onClick={() => onClickHandler(photo, 9 + i)}
                 ></div>
               </SwiperSlide>
