@@ -13,13 +13,14 @@ export const mainPhotos = [img1, img2, img3, img4, img5, img6, img7, img8, img9]
 export const mainPhotosOnPhone = [...mainPhotos].slice(0, -1)
 
 let secondaryPhotos = []
+export const allImages = [...mainPhotos]
+
 for (let i = 1; i <= 100; i++) {
   import(`../assets/galerija/galerija${i}.jpg`).then(res => {
     secondaryPhotos.push(res.default)
+    allImages.push(res.default)
   })
 }
-
-console.log(secondaryPhotos)
 
 export default secondaryPhotos
 
@@ -27,5 +28,3 @@ export const secondaryPhotosOnPhone = [
   ...secondaryPhotos,
   mainPhotos[mainPhotos.length - 1],
 ]
-
-export const allImages = [...mainPhotos, ...secondaryPhotos]

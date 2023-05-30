@@ -12,7 +12,11 @@ const Hamburger = () => {
   }
 
   return (
-    <button onClick={onClickHandler} className={classes.hamburger}>
+    <button
+      onClick={onClickHandler}
+      className={classes.hamburger}
+      ariaLabel="hamburger"
+    >
       {isOpened ? (
         <>
           <svg

@@ -30,7 +30,7 @@ const Header = () => {
     <header>
       <div className={classes.logo}>
         <Link to="/">
-          <img src={logo} alt="" />
+          <img ariaLabel="logo" src={logo} alt="" />
         </Link>
       </div>
       {mediaMatches ? (

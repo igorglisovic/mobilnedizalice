@@ -158,6 +158,10 @@ body {
   background-color: var(--main-clr);
 }
 
+.swiper-slide {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
 /* Instagram and Facebook icons */
 .icons {
   display: flex;
@@ -174,6 +178,7 @@ body {
   width: clamp(28px, 4.7vw, 35px);
 }
 
+/* Responsive fonts */
 /* Responsive fonts */
 p,
 span,

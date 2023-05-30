@@ -15,8 +15,6 @@ const GalleryOverlay = ({
   const [mediaMatches, setMediaMatches] = useState(false)
   const [activeThumb, setActiveThumb] = useState()
 
-  console.log(currentPhoto)
-
   let media = window.matchMedia('(max-width: 650px)')
 
   useEffect(() => {
@@ -68,7 +66,6 @@ const GalleryOverlay = ({
                   backgroundPosition: 'center',
                   width: '100%',
                   height: '100%',
-                  aspectRatio: '16/9',
                   cursor: 'pointer',
                 }}
               />
@@ -97,7 +94,8 @@ const GalleryOverlay = ({
                 style={{
                   backgroundImage: `url(${item})`,
                   backgroundSize: 'cover',
-                  aspectRatio: 1,
+                  backgroundPositionY: 'center',
+                  paddingTop: '90%',
                   cursor: 'pointer',
                 }}
                 onClick={e => {

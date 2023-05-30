@@ -37,7 +37,10 @@ const Hero = () => {
       >
         {slides.map((slide, i) => (
           <SwiperSlide key={i}>
-            <img className={classes.img} src={slide.img} alt={slide.title} />
+            <div
+              className={classes.img}
+              style={{ backgroundImage: `url(${slide.img})` }}
+            ></div>
             <div className={classes['carousel-caption']}>
               <p>{slide.title}</p>
               <h1>{slide.subTitle}</h1>

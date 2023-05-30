@@ -1,5 +1,5 @@
 import card1 from '../assets/card1.jpg'
-import img2 from '../assets/image1.jpg'
+import card2 from '../assets/card2.jpg'
 import card3 from '../assets/card3.jpg'
 import card5 from '../assets/card5.jpg'
 import card6 from '../assets/card6.jpg'
@@ -17,7 +17,7 @@ export const cards = [
     title: 'Prikolice',
     description:
       'Zahvaljujući konstrukciji rama, prikolice se mogu podizati direktno za sam ram.',
-    img: img2,
+    img: card2,
     active: false,
   },
   {
@@ -31,7 +31,7 @@ export const cards = [
     title: 'Traktori',
     description:
       'Konačno, uz PM Tools domaćin je u mogućnosti da sam izvrši popravke na svom traktoru.',
-    img: img2,
+    img: card2,
     active: false,
   },
   {

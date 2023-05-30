@@ -7,9 +7,12 @@
 }
 
 .img-wrapper {
-  background-image: url('https://wallpaper.dog/large/20512813.jpg');
-  height: 450px;
-  background-position: bottom;
+  background-image: url('../../assets/onama.jpg');
+  height: 580px;
+  filter: brightness(80%);
+  background-position-y: center;
+  background-position-x: center;
+  background-size: cover;
   margin-top: 1rem;
 }
 
@@ -35,5 +38,11 @@
 
   .o-nama ol {
     justify-content: center;
+  }
+
+  .img-wrapper {
+    height: 450px;
+    background-position-y: center;
+    background-position-x: calc(50% - 20px);
   }
 }

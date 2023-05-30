@@ -40,6 +40,9 @@ const GalerijaSection = () => {
   const onClickHandler = (photo, i) => {
     setCurrentPhoto(i)
     setIsOpened(true)
+    console.log(i)
+
+    console.log(allImages)
   }
 
   return (

@@ -80,7 +80,8 @@
 }
 
 .secondary-photo {
-  aspect-ratio: 1;
+  background-position-y: center;
+  padding-top: 90%;
   background-size: cover;
   cursor: pointer;
   transition: filter 0.3s;
@@ -93,7 +94,7 @@
   }
 
   .grid-item {
-    aspect-ratio: 1;
+    padding-top: 90%;
   }
 
   .grid-item:nth-child(1) {

@@ -6,7 +6,7 @@ import Pmtools from '../../assets/PmTools.png'
 import { Navigation } from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/css'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import { products } from '../../data/products'
 import Card from '../UI/Card'
 import { useParams } from 'react-router-dom'
@@ -19,6 +19,13 @@ const ProductSection = () => {
   const [currentPhoto, setCurrentPhoto] = useState()
   const params = useParams().productId.slice(1)
   const clickedProduct = products.find(product => product.name === params)
+  const [swiper, setSwiper] = useState(null)
+
+  useEffect(() => {
+    if (swiper) {
+      swiper.slideTo(0)
+    }
+  }, [swiper, clickedProduct])
 
   const [mainImage, setMainImage] = useState(clickedProduct.thumb)
   const clickedProductGroup = clickedProduct.group
@@ -69,6 +76,7 @@ const ProductSection = () => {
                 spaceBetween={10}
                 slidesPerView={3}
                 navigation
+                onSwiper={setSwiper}
               >
                 {clickedProduct.images.map((photo, i) => (
                   <SwiperSlide key={i}>

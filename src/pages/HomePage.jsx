@@ -6,6 +6,7 @@ import Cards from '../components/Sections/Cards'
 import Hero from '../components/Sections/Hero'
 import InstagramPosts from '../components/Sections/InstagramPosts'
 import VideoSection from '../components/Sections/VideoSection'
+import VideoSection2 from '../components/Sections/VideoSection2'
 
 const HomePage = () => {
   return (
@@ -15,6 +16,7 @@ const HomePage = () => {
         <Hero />
         <AboutProduct />
         <Achievements />
+        <VideoSection2 />
         <Cards />
         <VideoSection />
         <InstagramPosts />

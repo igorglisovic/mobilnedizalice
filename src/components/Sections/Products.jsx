@@ -14,7 +14,6 @@ const Products = () => {
   const onClickFilterHandler = e => {
     if (e.target.innerText === 'Obriši filtere' && isFiltered) {
       setProductsList(products)
-      console.log(e.target.innerText)
       setSelectedValue('kategorije')
       setIsFiltered(false)
       return
