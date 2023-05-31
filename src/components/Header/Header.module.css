@@ -14,7 +14,14 @@ header {
 
 header ul {
   display: flex;
-  gap: 1.2rem;
+}
+
+header ul > * {
+  margin-right: 1rem;
+}
+
+header ul > *:last-child {
+  margin-right: 0;
 }
 
 @supports not (gap: 1rem) {
