@@ -1,5 +1,5 @@
 .cards {
-  padding-top: 4rem;
+  padding-top: 3.5rem;
   padding-bottom: 6rem;
 }
 
@@ -72,5 +72,11 @@
 
   .cards .right-side {
     margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .cards {
+    padding-top: 3rem;
   }
 }

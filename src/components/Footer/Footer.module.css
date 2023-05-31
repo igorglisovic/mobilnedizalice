@@ -25,7 +25,8 @@ footer {
 
 .secondary {
   background-color: var(--main-clr);
-  padding-block: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
   margin-top: 4rem;
   color: #fff;
 }

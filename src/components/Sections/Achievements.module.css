@@ -1,7 +1,8 @@
 .achievements {
   background-color: var(--secondary-clr);
   color: #fff;
-  padding-block: 6.5rem;
+  padding-bottom: 6.5rem;
+  padding-top: 6.5rem;
 }
 
 .wrapper {

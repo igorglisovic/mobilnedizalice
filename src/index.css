@@ -158,8 +158,18 @@ body {
   background-color: var(--main-clr);
 }
 
-.swiper-slide {
+/* .swiper-slide {
   -webkit-transform: translate3d(0, 0, 0);
+} */
+
+@supports (-webkit-touch-callout: none) and (not (overflow-anchor: none)) {
+  @media not all and (min-resolution: 0.001dpcm) {
+    @media {
+      .swiper-slide {
+        -webkit-transform: translate3d(0, 0, 0);
+      }
+    }
+  }
 }
 
 /* Instagram and Facebook icons */

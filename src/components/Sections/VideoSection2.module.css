@@ -1,0 +1,47 @@
+.video-section {
+  padding-top: 3rem;
+}
+
+.video {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.video-wrapper {
+  padding: 0 14rem;
+  position: relative;
+}
+
+.video-wrapper div {
+  width: 300px;
+  height: 400px;
+  background-color: var(--main-clr);
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%) rotate(30deg);
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1300px) {
+  .video-wrapper {
+    padding: 0 7rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .video-wrapper {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .video-wrapper {
+    padding: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .video-wrapper {
+    padding: 0;
+  }
+}
