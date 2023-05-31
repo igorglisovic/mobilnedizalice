@@ -17,6 +17,13 @@ header ul {
   gap: 1.2rem;
 }
 
+@supports not (gap: 1rem) {
+  header ul {
+    display: grid;
+    grid-gap: 1.2rem;
+  }
+}
+
 header ul li {
   font-weight: 600;
 }
@@ -32,7 +39,7 @@ header ul li a:hover {
 }
 
 .logo {
-  width: clamp(5.7rem, 8vw, 10rem);
+  width: clamp(6.5rem, 8vw, 10rem);
 }
 
 .logo a {
