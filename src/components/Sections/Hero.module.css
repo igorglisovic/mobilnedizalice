@@ -33,11 +33,11 @@
   margin-bottom: 1.5rem;
 }
 
-.hero button {
+.carousel-caption a {
   transition: background-color 0.2s;
 }
 
-.hero button:hover {
+.carousel-caption a:hover {
   background-color: var(--secondary-clr);
 }
 

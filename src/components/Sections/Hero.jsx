@@ -11,6 +11,7 @@ import {
 } from 'swiper'
 import InstagramIcon from '../../assets/ig-icon.png'
 import phoneIcon from '../../assets/phone-icon.png'
+import { Link } from 'react-router-dom'
 
 import 'swiper/css/autoplay'
 import 'swiper/swiper-bundle.min.css'
@@ -44,7 +45,9 @@ const Hero = () => {
             <div className={classes['carousel-caption']}>
               <p>{slide.title}</p>
               <h1>{slide.subTitle}</h1>
-              <button>Pozovite nas</button>
+              <Link className="button" to="/proizvodi">
+                Naši proizvodi
+              </Link>
             </div>
           </SwiperSlide>
         ))}
