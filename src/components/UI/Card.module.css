@@ -35,6 +35,11 @@
   font-size: clamp(0.75rem, 1.5vw, 1.1rem) !important;
   background-color: var(--secondary-clr);
   align-self: flex-start;
+  transition: background-color 0.3s;
+}
+
+.content button:hover {
+  background-color: var(--main-clr);
 }
 
 .slider-card {

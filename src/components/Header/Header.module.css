@@ -57,11 +57,16 @@ header ul li a:hover {
   color: #fff !important;
   background-color: var(--main-clr);
   padding: 0.5em 2em;
+  transition: background-color 0.2s;
+}
+
+.kontakt:hover {
+  background-color: var(--secondary-clr);
 }
 
 @media only screen and (max-width: 950px) {
-  header ul {
-    gap: 0.8rem;
+  header ul > * {
+    margin-bottom: 0.7rem;
   }
 }
 
@@ -77,5 +82,13 @@ header ul li a:hover {
     flex-direction: initial;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
+  }
+
+  header ul > * {
+    margin-right: 0;
+  }
+
+  header ul > *:last-child {
+    margin-bottom: 0;
   }
 }

@@ -68,10 +68,17 @@
     top: 10%;
     left: -10px;
   }
+}
 
-  .video-wrapper div {
-    /* display: none;
-    visibility: hidden; */
+@media only screen and (max-width: 500px) {
+  .video-wrapper {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .video-wrapper {
+    padding: 0;
   }
 }
 
