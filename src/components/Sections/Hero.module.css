@@ -52,7 +52,6 @@
 
 .phone-wrapper {
   display: flex;
-  gap: 1.1rem;
   align-items: center;
   color: #fff;
   padding: 1rem;
@@ -79,12 +78,12 @@
 }
 
 .phone-wrapper img {
+  margin-right: 1.1rem;
   width: clamp(28px, 5vw, 40px);
 }
 
 .location-wrapper {
   display: flex;
-  gap: 1.1rem;
   align-items: center;
   color: var(--secondary-clr);
   padding: 1rem;
@@ -95,6 +94,7 @@
 }
 
 .location-wrapper img {
+  margin-right: 1.1rem;
   width: clamp(28px, 5vw, 40px);
 }
 
