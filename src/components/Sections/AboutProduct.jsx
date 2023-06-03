@@ -1,6 +1,6 @@
 import classes from './AboutProduct.module.css'
 import Container from '../UI/Container'
-import dizalica from '../../assets/dizalica.png'
+import dizalica from '../../assets/dizalica2.png'
 import { Link } from 'react-router-dom'
 
 const AboutProduct = () => {

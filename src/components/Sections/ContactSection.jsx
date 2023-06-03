@@ -18,7 +18,10 @@ const ContactSection = () => {
             <div>
               <h3>E-mail</h3>
               <p>
-                <a href="mailto:info@mobilnedizalice.com">
+                <a
+                  className={classes.link}
+                  href="mailto:info@mobilnedizalice.com"
+                >
                   info@mobilnedizalice.com
                 </a>
               </p>
@@ -26,7 +29,9 @@ const ContactSection = () => {
             <div>
               <h3>Telefon</h3>
               <p>
-                <a href="tel:+381-323-70-730 ">+381 32 370 730 </a>
+                <a className={classes.link} href="tel:+381-323-70-730 ">
+                  +381 32 370 730{' '}
+                </a>
               </p>
             </div>
             <div className={`${classes.icons} icons`}>
